@@ -13,10 +13,11 @@ function CountSort(){
         }
 
         /* DEMONSTRAÇÃO DA COMPLEXIDADE Θ(n + k)
-         *   A soma dos elementos de vetor_aux1 sempre será igual a vetor.length:
-         * vetor.length = n = n0 + n1 + n2 + n3 + ... + nk
+         * A soma dos elementos de vetor_aux1 sempre será igual a vetor.length
+         *      vetor.length = n = n0 + n1 + n2 + n3 + ... + nk
          * Onde n0 é a qtde de vezes que o elem 0 se repete e assim sucessivamente.
-         * Temos também que vetor_aux1 = [n0, n1, n2, ..., nk].
+         * Temos também que:
+         *      vetor_aux1 = [n0, n1, n2, ..., nk].
          * A complexidade de cada iteração é:
          *  P/ i = 0 => 1 + n0 
          *  P/ i = 1 => 1 + n1
@@ -39,15 +40,8 @@ function CountSort(){
     }
 }
 
-// function test(){
-//     var arr = [1, 4, 1, 2, 7, 5, 2];
-//     console.log(`array: [${arr}]`);
-
 //     var count = new CountSort();
-//     var sort_arr = count.sort(arr, 9);
+//     var sort_arr = count.sort([1, 4, 1, 2, 7, 5, 2], 9);
 //     console.log(`array_ordenado: [${sort_arr}]`);
-// }
-
-// test();
 
 exports.CountSort = new CountSort();

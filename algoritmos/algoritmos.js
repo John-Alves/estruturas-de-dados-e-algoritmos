@@ -4,8 +4,11 @@ const quick = require('./quick_sort');
 const heap = require('./heap_sort');
 const binary = require('./binary_search');
 const count = require('./counting_sort');
+const k_minor = require('./k_minor_search');
 
 function Algorithm(){
+    this.show_available = function(){}
+
     this.merge_sort = function(vetor){
         var vetor_copiado = JSON.parse(JSON.stringify(vetor));
         return merge.MergeSort.sort(vetor_copiado);
@@ -28,6 +31,10 @@ function Algorithm(){
     this.counting_sort = function(vetor, k){
         var vetor_copiado = JSON.parse(JSON.stringify(vetor));
         return count.CountSort.sort(vetor_copiado, k);
+    }
+    this.k_minor_search = function(k, vetor){
+        var vetor_copiado = JSON.parse(JSON.stringify(vetor));
+        return k_minor.KMinorSearch.search(k, vetor_copiado);
     }
 }
 

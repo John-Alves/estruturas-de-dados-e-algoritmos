@@ -30,7 +30,7 @@ function QuickSort(){
             }
         }
 
-        if ( j > maior_indice ) j = maior_indice; // caso o vetor esteja ordenado
+        if ( j > maior_indice ) j = maior_indice;
 
         return { pivot: j, vetor: vetor };
     }
