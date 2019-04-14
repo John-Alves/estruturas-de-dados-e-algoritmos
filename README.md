@@ -3,7 +3,26 @@
 Repositório criado para estudar e implementar algoritmos e estruturas de dados
 estudados na disciplina de `Construção e Analise de Algorimos`.
 
-## Lista de Problemas e Desáfios
+# Executando os arquivos
+
+Obs1: Para executar os arquivos instale o node.js em sua máquina.
+
+<code>node problemas/problema_X/solution.js</code> 
+
+Obs2: Troque o `X` pelo numero do problema que deseja executar.
+
+Para usar os algoritmos diretamente do console do node
+ou de seu proprio arquivo JS, dê um require no arquivo 
+`algoritmos/algoritmos.js`:
+
+<code>
+const algorithms = require('./algoritmos/algoritmos.js');
+
+var arr = [0, 4, 1, 2, 3];
+var sort_arr = algorithms.Algorithm.merge_sort(arr);
+</code> 
+
+# Lista de Problemas e Desáfios
 
 > _Obs: as resoluções estão dentro da pasta `problemas`._
 
