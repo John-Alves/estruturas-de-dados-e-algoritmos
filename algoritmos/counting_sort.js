@@ -5,7 +5,7 @@ function CountSort(){
 
     this.counting_sort = function(vetor, k){
         var vetor_aux1 = [];
-        for (var i = 0; i < k; i++) vetor_aux1[i] = 0;
+        for (var i = 0; i < k; i++) vetor_aux1[i] = 0; 
 
         for (var i = 0; i < vetor.length; i++) {
             var indice = vetor[i];

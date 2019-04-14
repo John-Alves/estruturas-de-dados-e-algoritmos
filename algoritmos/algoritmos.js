@@ -5,6 +5,7 @@ const heap = require('./heap_sort');
 const binary = require('./binary_search');
 const count = require('./counting_sort');
 const k_minor = require('./k_minor_search');
+const radix = require('./radix_sort');
 
 function Algorithm(){
     this.show_available = function(){}
@@ -35,6 +36,10 @@ function Algorithm(){
     this.k_minor_search = function(k, vetor){
         var vetor_copiado = JSON.parse(JSON.stringify(vetor));
         return k_minor.KMinorSearch.search(k, vetor_copiado);
+    }
+    this.radix_sort = function(vetor, k){
+        var vetor_copiado = JSON.parse(JSON.stringify(vetor));
+        return radix.RadixSort.sort(vetor_copiado);
     }
 }
 
