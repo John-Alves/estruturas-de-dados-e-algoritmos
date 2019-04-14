@@ -7,7 +7,7 @@ Repositório criado para estudar e implementar algoritmos e estruturas de dados.
 - [x] Quick-Sort
 - [x] Heap-Sort
 - [x] Counting-Sort (usando apenas um vetor auxiliar em tempo Θ(n + k))
-- [ ] Radix-Sort
+- [x] Radix-Sort
 - [x] Busca Binária
 - [x] Encontrar K-ésimo menor elemento (baseado no quick-sort)
 
