@@ -1,6 +1,7 @@
 ## Foi usada uma abordagem de divisão e conquista para resolver o problema.
 
-Ideia: Encontra a mediana de cada um dos vetores. Três situações podem ocorrer:
+Primeiro encontra-se a mediana de cada um dos vetores. Três situações 
+podem ocorrer:
 
 1. mediana do 1° == mediana do 2°
 > Nesse caso, ao juntar os dois vetores perceberiamos que os valores centrais 
