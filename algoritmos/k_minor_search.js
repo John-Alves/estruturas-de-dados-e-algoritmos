@@ -5,7 +5,7 @@ function KMinorSearch(){
             console.log(`Erro. O vetor possui apenas ${vetor.length} elementos!`);
             return -1;
         }
-        return this.k_minor_search(vetor, k - 1, 0, vetor.length - 1);
+        return this.k_minor_search_quick(vetor, k - 1, 0, vetor.length - 1);
     } 
 
     this.k_minor_search = function(vetor, k, menor_indice, maior_indice) {

@@ -1,3 +1,8 @@
+# Problema
+
+Elabore um algoritmo em Θ(n logn) que, dado um vetor S com n > 0 elementos,
+retorna um vetor V de tamanho n com a seguinte propriedade: V[i] é o número de ocorrências de S[i] em S.
+
 ## Resolução
 
 1. Ordena-se o vetor e coloca em um vetor auxiliar V1 para que não

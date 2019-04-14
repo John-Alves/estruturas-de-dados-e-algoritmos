@@ -1,4 +1,10 @@
-## Foi usada uma abordagem de divisão e conquista para resolver o problema.
+# Problema
+
+Sejam X[1...n] e Y[1...n] dois vetores ordenados. Escreva um algoritmo em Θ(logn) para encontrar a mediana de todos os 2n elementos dos vetores X e Y. 
+
+## Resolução
+
+*Foi usada uma abordagem de divisão e conquista para resolver o problema.*
 
 Primeiro encontra-se a mediana de cada um dos vetores. Três situações 
 podem ocorrer:
