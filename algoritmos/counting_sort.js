@@ -12,34 +12,42 @@ function CountSort(){
             vetor_aux1[indice]++;
         }
 
-        for (var i = 0; i < k; i++) {
-            if (i - 1 >= 0) vetor_aux1[i] += vetor_aux1[i - 1];
+        /* DEMONSTRAÇÃO DA COMPLEXIDADE Θ(n + k)
+         *   A soma dos elementos de vetor_aux1 sempre será igual a vetor.length:
+         * vetor.length = n = n0 + n1 + n2 + n3 + ... + nk
+         * Onde n0 é a qtde de vezes que o elem 0 se repete e assim sucessivamente.
+         * Temos também que vetor_aux1 = [n0, n1, n2, ..., nk].
+         * A complexidade de cada iteração é:
+         *  P/ i = 0 => 1 + n0 
+         *  P/ i = 1 => 1 + n1
+         *  P/ i = k => 1 + nk
+         * Total:  (1 + n0) + (1 + n1) + ... + (1 + nk)
+         *       = (1 + 1 + ... + 1) + (n0 + n1 + ... + nk)
+         *       = k + n
+         * Portanto: Θ(n + k)
+         */
+        var indice = 0; 
+        for (var i = 0; i < k; i++) { 
+            while (vetor_aux1[i] != 0) {
+                vetor[indice] = i;
+                indice++;
+                vetor_aux1[i]--;
+            }
         }
 
-        var vetor_ordenado = [];
-        for (var i = 0; i < vetor.length; i++) vetor_ordenado[i] = 0;
-
-        for (var i = 0; i < vetor.length; i++) {
-            var valor = vetor[i];
-            var indice_2 = vetor_aux1[valor];
-
-            vetor_ordenado[indice_2 - 1] = valor;
-            vetor_aux1[valor]--;
-        }
-
-        return vetor_ordenado;
+        return vetor;
     }
 }
 
-function test(){
-    var arr = [0, 4, 5, 1, 2, 7, 5, 2, 8];
-    console.log(`array: [${arr}]`);
+// function test(){
+//     var arr = [1, 4, 1, 2, 7, 5, 2];
+//     console.log(`array: [${arr}]`);
 
-    var count = new CountSort();
-    var sort_arr = count.sort(arr, 9);
-    console.log(`array_ordenado: [${sort_arr}]`);
-}
+//     var count = new CountSort();
+//     var sort_arr = count.sort(arr, 9);
+//     console.log(`array_ordenado: [${sort_arr}]`);
+// }
 
-test();
+// test();
 
 exports.CountSort = new CountSort();
