@@ -7,7 +7,7 @@ estudados na disciplina de `Construção e Analise de Algorimos`.
 
 Obs1: Para executar os arquivos instale o node.js em sua máquina.
 
-<code>node problemas/problema_X/solution.js</code> 
+```node problemas/problema_X/solution.js```
 
 Obs2: Troque o `X` pelo numero do problema que deseja executar.
 
@@ -15,12 +15,12 @@ Para usar os algoritmos diretamente do console do node
 ou de seu proprio arquivo JS, dê um require no arquivo 
 `algoritmos/algoritmos.js`:
 
-<code>
+```
 const algorithms = require('./algoritmos/algoritmos.js');
 
 var arr = [0, 4, 1, 2, 3];
 var sort_arr = algorithms.Algorithm.merge_sort(arr);
-</code> 
+```
 
 # Lista de Problemas e Desáfios
 
