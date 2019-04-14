@@ -1,7 +1,15 @@
 # Algoritmos
 
-Repositório criado para estudar e implementar algoritmos e estruturas de dados
-estudados na disciplina de `Construção e Analise de Algorimos`.
+Repositório criado para estudar e implementar algoritmos e estruturas de dados. Lista dos algoritmos implementados até o momento:
+
+- [x] Insertion-Sort
+- [x] Merge-Sort
+- [x] Quick-Sort
+- [x] Heap-Sort
+- [x] Counting-Sort (usando apenas um vetor auxiliar em tempo Θ(n + k))
+- [ ] Radix-Sort
+- [x] Busca Binária
+- [x] Encontrar K-ésimo menor elemento (baseado no quick-sort)
 
 # Executando os arquivos
 
@@ -22,11 +30,6 @@ var arr = [0, 4, 1, 2, 3];
 var sort_arr = algorithms.Algorithm.merge_sort(arr);
 ```
 
-# Lista de Problemas e Desáfios
+### Lista de Problemas e Desáfios
 
-> _Obs: as resoluções estão dentro da pasta `problemas`._
-
-1. Sejam X[1...n] e Y[1...n] dois vetores ordenados. Escreva um algoritmo em Θ(logn) para encontrar a mediana de todos os 2n elementos dos vetores X e Y. 
-
-2. Elabore um algoritmo em Θ(nlogn) que, dado um vetor S com n > 0 elementos,
-retorna um vetor V de tamanho n com a seguinte propriedade: V[i] é o número de ocorrências de S[i] em S.
+_Dentro da pasta `problemas` há alguns desafios envolvendo os algoritmos implementados._
